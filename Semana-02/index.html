@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trackgenix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="../Semana-02/css/reset.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
-        <button>*burger-Button*</button>
-        <p>Trackgenix</p>                 
-        <ul>
+      <nav class="menu-header">
+        <div class="btn-header">
+          <button>*burger-Button*</button>
+          <span class="title-header">Trackgenix</span>                 
+        </div> 
+        <ul class="ul-header">          
           <li><a href="AboutPage">About Trackgenix</a></li>
           <li><a href="FuntionsPage">Functions</a></li>
           <li><a href="InfoPage">Info</a></li>
           <li><a href="HistoryPage">History</a></li>
-          <li>Products & Services
+          <li><a href="#">Products & Services </a> 
             <ul>
               <li><a href="ProductsPage">Products </a></li>
               <li><a href="BusinessPage">Products </a></li>
@@ -26,186 +32,210 @@
         </ul>    
       </nav>        
     </header>
-      <aside>
-        <form>
-          <input type="text" placeholder="Search">
-        </form>
-        <p>Menu</p>
-        <div>
-          <ul>
-            <li>../assets/icon/home.svg
-              <img src="/assets/icon/home.svg" alt="IconHome" width="10" height="10">
-              <a href="home.com">Home</a>
-            </li>
-            <li>
-              <img src="/assets/icon/sing-up.svg" alt="IconSingup" width="10" height="10">           
-              <a href="SingIn">Sign Up</a>
-            </li>
-            <li>    
-              <img src="/assets/icon/login.svg" alt="IconLogin" width="10" height="10">           
-              <a href="SingIn">Login</a>
-            </li>             
-            <li>  
-              <img src="/assets/icon/message.svg" alt="IconMessage" width="10" height="10">
-              <a href="Contact">Contact</a>
-            </li>
-          </ul>  
-        </div> 
-        <h4>Get in Touch</h4>
-        <div>
-          <ul>
-            <li>
-              <img src="/assets/icon/mail.svg" alt="IconMail" width="10" height="10">
-              <p>info@gigantech.com</p>
-            </li>
-            <li>
-              <img src="/assets/icon/phone.svg" alt="IconTelephone" width="10" height="10">
-              <p>(+000)000-000000</p>
-            </li>
-            <li>
-              <img src="/assets/icon/location-pin.svg" alt="IconLocation" width="10" height="10">
-              <p>1234 Somewhere Road SomeWhere,XX 000-0000</p>
-            </li>
-          </ul>
-        </div>     
-    </aside> 
+    <aside>
+      <form>
+        <input class="search" type="text" placeholder="Search">
+      </form>
+      <p class="title-aside">Menu</p>
+      <p class="border-aside"></p>
+      <div>
+        <ul>
+          <li class="items-aside">
+            <img class="img-aside" src="../Semana-02/assets/icon/home.svg" alt="IconHome">
+            <a class="text-aside" href="home.com">Home</a>
+          </li>
+          <li class="items-aside">
+            <img class="img-aside" src="../Semana-02/assets/icon/sing-up.svg" alt="IconSingup">           
+            <a class="text-aside" href="SingIn">Sign Up</a>
+          </li>
+          <li class="items-aside">    
+            <img class="img-aside" src="../Semana-02/assets/icon/user.png" alt="IconLogin">           
+            <a class="text-aside" href="SingIn">Login</a>
+          </li>             
+          <li class="items-aside">  
+            <img class="img-aside" src="../Semana-02/assets/icon/message.svg" alt="IconMessage">
+            <a class="text-aside" href="Contact">Contact</a>
+          </li>
+        </ul>  
+      </div> 
+      <p class="title-aside margin-top">Get in Touch</p>
+      <p class="border-aside"></p>
+      <div>
+        <ul>
+          <li class="items-aside">
+            <img class="img-aside" src="../Semana-02/assets/icon/mail.svg" alt="IconMail">
+            <span class="text-aside" >info@gigantech.com</span>
+          </li>
+          <li class="items-aside">
+            <img class="img-aside" src="../Semana-02/assets/icon/phone.svg" alt="IconTelephone">
+            <span class="text-aside" >(+000)000-000000</span>
+          </li>
+          <li class="items-aside">
+            <img class="img-aside" src="../Semana-02/assets/icon/location-pin.svg" alt="IconLocation">
+            <span class="text-aside">1234 Somewhere Road SomeWhere,XX 000-0000</span>
+          </li>
+        </ul>
+      </div>     
+  </aside> 
     <main>
       <section>
+        <img id="img-main" src="../Semana-02/assets/main/ImageMain.png" alt="DeveloperWoman">   
+        <div>
         <h1>Trackgenix</h1>
-        <h4>Make it easy to record hours worked on each project and work team at GigaTech Software Solutions SA</h4>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and 
-          typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s,
+        <h4 class="text-main">Make it easy to record hours worked on each project and work team at GigaTech Software Solutions SA</h4>
+        <div class="container-paragraph-main">
+        <p class="paragraph-main">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s,
         </p>
-        <button>LEAN MORE</button>
-        <img src="/assets/img/ImageMain.png" alt="DeveloperWoman" width="400" height="400">
+      </div>
+        <button class="btn-LearnMore">LEAN MORE</button>        
+      </div>         
       </section>
+
       <section>
-        <h3>About Trackgenix</h3>
-        <article>
-          <img src="/assets/icon/lampara.png" alt="IconLight-ProductivyBooster" width="50" height="50">
-          <h4>Productivity booster</h4>
-          <p>
+        <h3 class="title-section">About Trackgenix</h3>
+        <article class="container-article  float-right">
+          <img class="img-section" src="../Semana-02/assets/icon/shhet-search.png" alt="IconRports-WorkTraceability">
+          <div class="float-section">
+          <h4 class="text-section">Work traceability</h4>
+          <p class="p-section">
+            Lorem Ipsum is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s,
+          </p>
+        </div>
+        </article>
+        <article class="container-article">
+          <img class="img-section" src="../Semana-02/assets/icon/light-bulb.png" alt="IconLight-ProductivyBooster">
+          <div class="float-section">
+          <h4 class="text-section">Productivity booster</h4>
+          <p class="p-section">
             Lorem Ipsum is simply dummy text of the printing and 
             typesetting industry. Lorem Ipsum has been the industry's
             standard dummy text ever since the 1500s, 
-          </p>
+          </p>   
+        </div>     
         </article>
-        <article>
-          <img src="/assets/icon/reports.svg" alt="IconRports-WorkTraceability" width="50" height="50">
-          <h4>Work traceability</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and 
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s,
+        <article class="container-article float-right">
+          <img class="img-section" src="../Semana-02/assets/icon/hand.png" alt="IconLike-DecisionMarking">
+          <div class="float-section">
+          <h4 class="text-section">Decision making</h4>
+          <p class="p-section">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s,            
           </p>
+        </div>
         </article>
-        <article>
-          <img src="/assets/icon/login.svg" alt="IconLogin-TeamManagment" width="50" height="50"">
-          <h4>Leadership and team management</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and 
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s,
+        <article class="container-article">
+          <img  class="img-section" src="../Semana-02/assets/icon/user.png" alt="IconLogin-TeamManagment">
+          <div class="float-section">
+          <h4 class="text-section">Leadership and team management</h4>
+          <p class="p-section">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+            industry's standard dummy text ever since the 1500s,            
           </p>
-        </article>
-        <article>
-          <img src="/assets/icon/like.svg" alt="IconLike-DecisionMarking" width="50" height="50">
-          <h4>Decision making</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and 
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s,
-          </p>
+          </div>
         </article>
       </section>
       <section>
-        <h3>Functions</h3>
-        <article>
-          <img src="/assets/icon/clock.svg" alt="IconClock-RecordOfHours" width="50" height="50">
-          <h4>Record of hours</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry.
-            Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s,
+        <h3 class="title-section">Functions</h3>
+        <article class="container-article  float-right">
+          <img class="img-section" src="../Semana-02/assets/icon/sheet.svg" alt="IconReports">
+          <div class="float-section">
+          <h4 class="text-section">Reports</h4>
+          <p class="p-section">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s,
           </p>
+        </div>
         </article>
-        <article>
-          <img src="/assets/icon/reports.svg" alt="IconReports" width="50" height="50">
-          <h4>Reports</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and 
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s,
+        <article class="container-article">
+          <img class="img-section" src="../Semana-02/assets/icon/clock.png" alt="IconClock-RecordOfHours">
+          <div class="float-section">
+          <h4 class="text-section">Record of hours</h4>
+          <p class="p-section">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s,
           </p>
+        </div>
         </article>
-        <article>
-          <img src="/assets/icon/settings.svg" alt="IconSettings-ResourceManagment" width="50" height="50">
-          <h4>Resource management</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and 
-            typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s,
+        <article class="container-article  float-right">
+          <img class="img-section" src="../Semana-02/assets/icon/person.png" alt="IconTeam-MultipleRoles">
+          <div class="float-section">
+          <h4 class="text-section">Multiple roles</h4>
+          <p class="p-section">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s,
           </p>
+        </div>
         </article>
-        <article>
-          <img src="/assets/icon/team-connect.svg" alt="IconTeam-MultipleRoles" width="50" height="50">
-          <h4>Multiple roles</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and 
-            typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s,
+        <article class="container-article">
+          <img class="img-section" src="../Semana-02/assets/icon/nut.png" alt="IconSettings-ResourceManagment">
+          <div class="float-section">
+          <h4 class="text-section">Resource management</h4>
+          <p class="p-section">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s,
           </p>
-        </article>
+        </div>
+        </article>  
       </section>
       <section>
-        <h4>Information</h4>
-        <form>      
-          <label>Name</label>
-          <input type="text" placeholder="text your name">      
-          <label>Email</label>
-          <input type="text" placeholder="text your email">
+        <h3 class="title-section">Information</h3>
+        <form class="form-main">      
+          <label class="label-form">Name</label>
+          <input class="input-form" type="text" placeholder="text your name">      
+          <label class="label-form">Email</label>
+          <input class="input-form" type="text" placeholder="text your email">
           <article>    
-            <label>Contact Area</label>
+            <label class="label-form">Contact Area</label>
             <ul>
               <li>Human Resources</li>
               <li>Systems</li>
               <li>Commercialization</li>
             </ul>
           </article>
-          <label>Message</label>
+          <label class="label-form">Message</label>
           <textarea placeholder="text your message"></textarea>
-          <input type="button" placeholder="Send" value="Send">
+          <input class="btn-send" type="button" placeholder="Send" value="Send">
         </form>
       </section>
       <section>
         <h3>Our History</h3>
         <h5>GigaTech Software Solutions SA</h5>    
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+          make a type specimen book.
         </p>      
         <ul>
           <li>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+              scrambled it to make a type specimen book. 
             </p>
           </li>
           <li>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+              scrambled it to make a type specimen book.
             </p>
           </li>
           <li>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+              scrambled it to make a type specimen book.
             </p>
           </li>
           <li>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+              scrambled it to make a type specimen book.
             </p>
           </li>
         </ul>
@@ -213,50 +243,64 @@
       <section>
         <h2>Products</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+          scrambled it to make a type specimen book.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+          scrambled it to make a type specimen book.
         </p>
         <ol>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Functionalities</li>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Downloads</li>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Integrations</li>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Adittional feactures</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Functionalities</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Downloads</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Integrations</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Adittional feactures</li>
         </ol>  
       </section>
       <section>
         <h2>Business</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+          scrambled it to make a type specimen book.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+          scrambled it to make a type specimen book.
         </p>
         <ol>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">About us</li>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Costumers</li>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Means</li>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Blog</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">About us</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Costumers</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Means</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Blog</li>
         </ol>    
       </section>
       <section>
         <h2>Support</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+          scrambled it to make a type specimen book.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+          scrambled it to make a type specimen book.
         </p>
         <ol>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Aid</li>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Tutorials</li>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">API</li>
-          <li><img src="/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Contact</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Aid</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Tutorials</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">API</li>
+          <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back" width="10" height="10">Contact</li>
         </ol>   
       </section>
     </main>
     <footer>
-     <img src="/assets/icon/linkedin.png" alt="button-Back" width="20" height="20">
-     <img src="/assets/icon/twitter.png" alt="button-Back" width="20" height="20">
-     <img src="/assets/icon/facebook.png" alt="button-Back" width="20" height="20">
-     <img src="/assets/icon/instagram.png" alt="button-Back" width="20" height="20">
-     <img src="/assets/icon/github.png" alt="button-Back" width="20" height="20">
-     <p>Copyright © 2022 Radium Rocket. All rights reserved.</p>
+      <div class="element-footer">
+        <img class="img-footer" src="../Semana-02/assets/footer-icons/linkedin.svg" alt="button-LinkedIn">
+        <img class="img-footer"  src="../Semana-02/assets/footer-icons/twitter.svg" alt="button-Twitter">
+        <img class="img-footer"  src="../Semana-02/assets/footer-icons/facebook.svg" alt="button-Facebook">
+        <img class="img-footer"  src="../Semana-02/assets/footer-icons/instagram.svg" alt="button-Instagram">
+        <img class="img-footer"  src="../Semana-02/assets/footer-icons/github.svg" alt="button-GitHub"    >
+        <p class="text-footer">Copyright © 2022 Radium Rocket. All rights reserved.</p>
+      </div>
     </footer>  
   </body>
 </html>
