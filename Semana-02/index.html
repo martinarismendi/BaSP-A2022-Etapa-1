@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trackgenix</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+    <link href="../Semana-02/css/style.css" rel="stylesheet">
     <link href="../Semana-02/css/reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
   <body>
     <header>
       <nav class="menu-header">
         <div class="btn-header">
-          <button>*burger-Button*</button>
+          <i class="fa-solid fa-bars"></i>
           <span class="title-header">Trackgenix</span>                 
         </div> 
-        <ul class="ul-header">          
-          <li><a href="AboutPage">About Trackgenix</a></li>
-          <li><a href="FuntionsPage">Functions</a></li>
-          <li><a href="InfoPage">Info</a></li>
-          <li><a href="HistoryPage">History</a></li>
-          <li><a href="#">Products & Services </a> 
-            <ul>
-              <li><a href="ProductsPage">Products </a></li>
-              <li><a href="BusinessPage">Products </a></li>
-              <li><a href="SupportPage">Products </a></li>
-            </ul>
-          </li>
-        </ul>    
+        <div class="ul-header">
+          <ul>          
+            <li><a href="AboutPage">About Trackgenix</a></li>
+            <li><a href="FuntionsPage">Functions</a></li>
+            <li><a href="InfoPage">Info</a></li>
+            <li><a href="HistoryPage">History</a></li>
+            <li><a href="#">Products & Services </a> 
+              <ul>
+                <li><a href="ProductsPage">Products </a></li>
+                <li><a href="BusinessPage">Products </a></li>
+                <li><a href="SupportPage">Products </a></li>
+              </ul>
+            </li>
+          </ul> 
+      </div>   
       </nav>        
     </header>
     <aside>
@@ -41,19 +47,19 @@
       <div>
         <ul>
           <li class="items-aside">
-            <img class="img-aside" src="../Semana-02/assets/icon/home.svg" alt="IconHome">
+            <i class="fa-solid fa-house"></i>
             <a class="text-aside" href="home.com">Home</a>
           </li>
           <li class="items-aside">
-            <img class="img-aside" src="../Semana-02/assets/icon/sing-up.svg" alt="IconSingup">           
+            <i class="fa-sharp fa-solid fa-user-plus"></i>         
             <a class="text-aside" href="SingIn">Sign Up</a>
           </li>
           <li class="items-aside">    
-            <img class="img-aside" src="../Semana-02/assets/icon/user.png" alt="IconLogin">           
-            <a class="text-aside" href="SingIn">Login</a>
+            <i class="fa-regular fa-user"></i>
+            <a class="text-aside" href="Login">Login</a>
           </li>             
           <li class="items-aside">  
-            <img class="img-aside" src="../Semana-02/assets/icon/message.svg" alt="IconMessage">
+            <i class="fa-light fa-envelope"></i>
             <a class="text-aside" href="Contact">Contact</a>
           </li>
         </ul>  
@@ -63,15 +69,15 @@
       <div>
         <ul>
           <li class="items-aside">
-            <img class="img-aside" src="../Semana-02/assets/icon/mail.svg" alt="IconMail">
+            <i class="fa-light fa-envelope"></i>
             <span class="text-aside" >info@gigantech.com</span>
           </li>
           <li class="items-aside">
-            <img class="img-aside" src="../Semana-02/assets/icon/phone.svg" alt="IconTelephone">
+            <i class="fa-light fa-phone"></i>
             <span class="text-aside" >(+000)000-000000</span>
           </li>
           <li class="items-aside">
-            <img class="img-aside" src="../Semana-02/assets/icon/location-pin.svg" alt="IconLocation">
+            <i class="fa-sharp fa-solid fa-map-pin"></i>
             <span class="text-aside">1234 Somewhere Road SomeWhere,XX 000-0000</span>
           </li>
         </ul>
@@ -92,7 +98,6 @@
         <button class="btn-LearnMore">LEAN MORE</button>        
       </div>         
       </section>
-
       <section>
         <h3 class="title-section">About Trackgenix</h3>
         <article class="container-article  float-right">
@@ -294,11 +299,11 @@
     </main>
     <footer>
       <div class="element-footer">
-        <img class="img-footer" src="../Semana-02/assets/footer-icons/linkedin.svg" alt="button-LinkedIn">
-        <img class="img-footer"  src="../Semana-02/assets/footer-icons/twitter.svg" alt="button-Twitter">
-        <img class="img-footer"  src="../Semana-02/assets/footer-icons/facebook.svg" alt="button-Facebook">
-        <img class="img-footer"  src="../Semana-02/assets/footer-icons/instagram.svg" alt="button-Instagram">
-        <img class="img-footer"  src="../Semana-02/assets/footer-icons/github.svg" alt="button-GitHub"    >
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
         <p class="text-footer">Copyright © 2022 Radium Rocket. All rights reserved.</p>
       </div>
     </footer>  
