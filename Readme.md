@@ -8,16 +8,21 @@
 ```
 1.Go to this github path and extract this folder:
     
-  *BaSP-A2022-Etapa-1/Semana-02*
+  *BaSP-A2022-Etapa-1/Semana-03*
 ```
 ```
-2.Execute Index.html
+2.Enter to Semana-02 folder
 ```
-![image](https://user-images.githubusercontent.com/29515684/187246958-1bd04a06-0ad1-4c76-b757-1cba53f1303c.png)
+![Readme2](https://user-images.githubusercontent.com/29515684/188773642-12f321df-9780-44c7-8daf-2360be97d380.png)
+
 ```
-3.Finish
+3.Execute Index.html
+```
+![Readme](https://user-images.githubusercontent.com/29515684/188773385-9d50e77d-a32d-4b60-8525-755e326fb83c.png)
+```
+4.Finish
 ```
  
-Week Problem 02
+Week Problem 03
 
 ### Martin Arismendi.
