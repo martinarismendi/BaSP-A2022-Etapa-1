@@ -313,12 +313,10 @@ footer{
   text-align: center;
 }
 .img-footer{
-  background-color: #c4c4c4;
-  margin-top: 25px;
+  color: #c4c4c4;
   width: 31px;
   height: 31px;
-  border-radius: 50%;
-  margin: 0px 10px;
+  margin: 25px 10px 10px 0px;
 }
 .text-footer{
   margin-top: 10px;
