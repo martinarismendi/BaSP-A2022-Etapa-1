@@ -5,12 +5,9 @@ html{
 a{
   text-decoration: none;
 }
-
-
 ul ul{
   display: none;
 }
-
 main{
   margin-top: 120px;
   margin-left: 300px;
@@ -18,7 +15,6 @@ main{
 #img-main{
   width: 507px;
   height:500px;
-  float:right;
   margin-right: 160px;
   border-radius: 10px;
 }  
@@ -72,6 +68,11 @@ h1{
   width: 1150px;
   float: right;
   margin-right: 80px;
+}
+.container-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .title-section{
   font-weight: 700;
@@ -180,7 +181,7 @@ h5{
   color: #373867;  
   line-height: 24px;
 }
-li p{
+.li-our{
   margin-bottom: 10px;
 }
 .our-article{
