@@ -23,16 +23,26 @@ header{
 .menu-header{
   padding-top: 50px;
   margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 .btn-header{
-  float: left;
+  display: flex;
   padding-left: 20px;
 }
 .ul-header{
-  float:right;
-  margin-right:200px ;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-nav li{        
-  float:left;
-  padding-left: 40px;
+.ul-header li{
+padding: 0px 15px;
+}
+
+@media screen and (max-width:834px) {
+  .title-header{
+    display: none;
+  }
+  
 }

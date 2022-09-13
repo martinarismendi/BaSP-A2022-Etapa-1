@@ -2,7 +2,6 @@ footer{
   height: 106px;
   width: 100%;
   background-color: #D9D9D9;
-
   bottom: 0;
   left: 0;
 }
@@ -19,5 +18,11 @@ footer{
   margin-top: 10px;
   color: #373867;
   font-weight: 500;
+}
+@media screen and (max-width:834px) {
+  footer{
+    position: fixed;
+  }
+  
 }
   
