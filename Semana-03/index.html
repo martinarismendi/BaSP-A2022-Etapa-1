@@ -11,7 +11,7 @@
     <link href="../Semana-03/css/style.css" rel="stylesheet">   
     <link href="../Semana-03/css/header.css" rel="stylesheet">   
     <link href="../Semana-03/css/footer.css" rel="stylesheet">
-    <link href="../Semana-03/css/"
+    <link href="../Semana-03/css/aside.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
           integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -30,13 +30,7 @@
             <li><a href="FuntionsPage">Functions</a></li>
             <li><a href="InfoPage">Info</a></li>
             <li><a href="HistoryPage">History</a></li>
-            <li><a href="#">Products & Services </a> 
-              <ul>
-                <li><a href="ProductsPage">Products </a></li>
-                <li><a href="BusinessPage">Products </a></li>
-                <li><a href="SupportPage">Products </a></li>
-              </ul>
-            </li>
+            <li><a href="#">Products & Services </a></li>
           </ul> 
         </div>   
       </nav>        
@@ -89,229 +83,242 @@
       </div>    
     </aside>
     <main>
-      <section>
-        <img id="img-main" src="../Semana-02/assets/main/ImageMain.png" alt="DeveloperWoman">   
-        <h1>Trackgenix</h1>
-        <h4 class="text-main">Make it easy to record hours worked on each project and work team at GigaTech Software Solutions SA</h4>
-        <div class="container-paragraph-main">
-          <p class="paragraph-main">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-            industry's standard dummy text ever since the 1500s,
-          </p>
-        </div>
-        <button class="btn-LearnMore">LEAN MORE</button>          
-      </section>
-      <section class="container-section">
-        <h3 class="title-section">About Trackgenix</h3>
-        <article class="container-article  float-right">
-          <img class="img-section" src="../Semana-02/assets/icon/shhet-search.png" alt="IconRports-WorkTraceability">
-          <div class="float-section">
-            <h4 class="text-section">Work traceability</h4>
-            <p class="p-section">
-              Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s,
-            </p>
-          </div>
-        </article>
-        <article class="container-article">
-          <img class="img-section" src="../Semana-02/assets/icon/light-bulb.png" alt="IconLight-ProductivyBooster">
-          <div class="float-section">
-            <h4 class="text-section">Productivity booster</h4>
-            <p class="p-section">
-              Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, 
-            </p>   
-          </div>     
-        </article>
-        <article class="container-article float-right">
-          <img class="img-section" src="../Semana-02/assets/icon/hand.png" alt="IconLike-DecisionMarking">
-          <div class="float-section">
-            <h4 class="text-section">Decision making</h4>
-            <p class="p-section">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,            
-            </p>
-          </div>
-        </article>
-        <article class="container-article">
-          <img  class="img-section" src="../Semana-02/assets/icon/user.png" alt="IconLogin-TeamManagment">
-          <div class="float-section">
-            <h4 class="text-section">Leadership and team management</h4>
-            <p class="p-section">
+      <section class="container-flex">
+        <div> 
+          <h1>Trackgenix</h1>
+          <h2 class="text-main">Make it easy to record hours worked on each project and work team at GigaTech Software Solutions SA</h2>
+          <div class="container-paragraph-main">
+            <p class="paragraph-main">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-              industry's standard dummy text ever since the 1500s,            
+              industry's standard dummy text ever since the 1500s,
             </p>
           </div>
-        </article>
+          <button class="btn-LearnMore">LEAN MORE</button>
+        </div>
+        <img id="img-main" src="../Semana-03/assets/main/ImageMain.png" alt="DeveloperWoman">          
+      </section>
+      <section >
+        <h2 class="title-section">About Trackgenix</h2>
+        <div class="container-flex margin-article">
+          <div>
+            <article class="container-article">
+              <img class="img-section" src="../Semana-03/assets/icon/light-bulb.png" alt="IconLight-ProductivyBooster">
+              <div class="margin-section">
+                <h4 class="text-section">Productivity booster</h4>
+                <p class="p-section">
+                  Lorem Ipsum is simply dummy text of the printing and 
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, 
+                </p>   
+              </div>     
+            </article>
+            <article class="container-article">
+              <img  class="img-section" src="../Semana-03/assets/icon/user.png" alt="IconLogin-TeamManagment">
+              <div class="margin-section">
+                <h4 class="text-section">Leadership and team management</h4>
+                <p class="p-section">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                  industry's standard dummy text ever since the 1500s,            
+                </p>
+              </div>
+            </article>
+          </div>
+          <div>
+            <article class="container-article">
+              <img class="img-section" src="../Semana-03/assets/icon/shhet-search.png" alt="IconRports-WorkTraceability">
+              <div class="margin-section">
+                <h3 class="text-section">Work traceability</h3>
+                <p class="p-section">
+                  Lorem Ipsum is simply dummy text of the printing and 
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </article>        
+            <article class="container-article">
+              <img class="img-section" src="../Semana-03/assets/icon/hand.png" alt="IconLike-DecisionMarking">
+              <div class="margin-section">
+                <h4 class="text-section">Decision making</h4>
+                <p class="p-section">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s,            
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>           
       </section>
       <section class="container-section">
-        <h3 class="title-section">Functions</h3>
-        <article class="container-article  float-right">
-          <img class="img-section" src="../Semana-02/assets/icon/sheet.png" alt="IconReports">
-          <div class="float-section">
-            <h4 class="text-section">Reports</h4>
-            <p class="p-section">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,
-            </p>
+        <h2 class="title-section">Functions</h2>
+        <div class="container-flex margin-article">
+          <div>
+            <article class="container-article">
+              <img class="img-section" src="../Semana-03/assets/icon/clock.png" alt="IconClock-RecordOfHours">
+              <div class="margin-section">
+                <h4 class="text-section">Record of hours</h4>
+                <p class="p-section">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </article>
+            <article class="container-article">
+              <img class="img-section" src="../Semana-03/assets/icon/nut.png" alt="IconSettings-ResourceManagment">
+              <div class="margin-section">
+                <h4 class="text-section">Resource management</h4>
+                <p class="p-section">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </article>
           </div>
-        </article>
-        <article class="container-article">
-          <img class="img-section" src="../Semana-02/assets/icon/clock.png" alt="IconClock-RecordOfHours">
-          <div class="float-section">
-            <h4 class="text-section">Record of hours</h4>
-            <p class="p-section">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,
-            </p>
-          </div>
-        </article>
-        <article class="container-article  float-right">
-          <img class="img-section" src="../Semana-02/assets/icon/person.png" alt="IconTeam-MultipleRoles">
-          <div class="float-section">
-            <h4 class="text-section">Multiple roles</h4>
-            <p class="p-section">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,
-            </p>
-          </div>
-        </article>
-        <article class="container-article">
-          <img class="img-section" src="../Semana-02/assets/icon/nut.png" alt="IconSettings-ResourceManagment">
-          <div class="float-section">
-            <h4 class="text-section">Resource management</h4>
-            <p class="p-section">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,
-            </p>
-          </div>
-        </article>  
+          <div>
+            <article class="container-article">
+              <img class="img-section" src="../Semana-03/assets/icon/sheet.png" alt="IconReports">
+              <div class="margin-section">
+                <h4 class="text-section">Reports</h4>
+                <p class="p-section">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </article>
+            <article class="container-article">
+              <img class="img-section" src="../Semana-03/assets/icon/person.png" alt="IconTeam-MultipleRoles">
+              <div class="margin-section">
+                <h4 class="text-section">Multiple roles</h4>
+                <p class="p-section">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </article>
+          </div>    
+        </div>    
       </section>
       <section class="container-section">
-        <h3 class="title-section">Information</h3>
-        <form class="form-main">      
-          <label class="label-form">Name</label>
-          <input class="input-form" type="text" placeholder="text your name">      
-          <label class="label-form">Email</label>
-          <input class="input-form" type="text" placeholder="text your email">
-          <article class="margin-contact">    
-            <label class="label-form">Contact Area</label>
-            <ul>
-              <li class="check-contact"><input type="radio">Human Resources</li>
-              <li class="check-contact"><input  type="radio">Systems</li>
-              <li class="check-contact"><input type="radio">Commercialization</li>
-            </ul>
-          </article>
-          <label class="label-form">Message</label>
-          <textarea placeholder="text your message"></textarea>
-          <input class="btn-send" type="button" placeholder="Send" value="Send">
-        </form>
+        <h2 class="title-section">Information</h2>
+        <div class="form-flex">
+          <form class="form-main">      
+            <label class="label-form">Name</label>
+            <input class="input-form" type="text" placeholder="text your name">
+            <label class="label-form">Email</label>
+            <input class="input-form" type="text" placeholder="text your email">
+            <article class="margin-contact">    
+              <label class="label-form">Contact Area</label>
+              <ul>
+                <li class="check-contact"><input type="radio">Human Resources</li>
+                <li class="check-contact"><input  type="radio">Systems</li>
+                <li class="check-contact"><input type="radio">Commercialization</li>
+              </ul>
+            </article>
+            <label class="label-form">Message</label>
+            <textarea placeholder="text your message"></textarea>
+            <input class="btn-send" type="button" placeholder="Send" value="Send">
+          </form>
+        </div>
       </section>
       <section class="container-section">
-        <h3 class="our-title">Our History</h3>
+        <h2 class="our-title">Our History</h2>
         <h5>GigaTech Software Solutions SA</h5>
         <article class="our-article">
-          <ul class="float-right p-our">
-            <li>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-                scrambled it to make a type specimen book. 
+          <div class="container-flex">
+            <div>
+              <p class="p-history">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                make a type specimen book.
               </p>
-            </li>
-            <li>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-                scrambled it to make a type specimen book.
-              </p>
-            </li>
-            <li>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-                scrambled it to make a type specimen book.
-              </p>
-            </li>
-            <li>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-                scrambled it to make a type specimen book.
-              </p>
-            </li>
-          </ul>    
-          <p class="p-history">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
-            make a type specimen book.
-          </p>
+            </div>
+            <div>
+              <ul class="p-our">
+                <li class="li-our">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                    scrambled it to make a type specimen book. 
+                </li>
+                <li class="li-our">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                    scrambled it to make a type specimen book.
+                </li>
+                <li class="li-our">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                    scrambled it to make a type specimen book.
+                </li>
+                <li class="li-our">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                    scrambled it to make a type specimen book.
+                  </p>
+                </li>
+              </ul>
+            </div>            
+          </div>  
         </article>      
       </section>
       <section class="container-section">
-        <article class="container-article">
-          <h3 class="title-section box-gray">Products</h3>
-          <div class="container-ol">
-            <ol class="float-right box-gray">
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">Functionalities</li>
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">Downloads</li>
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">Integrations</li>
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">Adittional feactures</li>
-            </ol> 
-          </div> 
-          <p class="p-info">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-            scrambled it to make a type specimen book.
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-            scrambled it to make a type specimen book.
-          </p>
-        </article>
-      </section>
-      <section class="container-section">
-        <article class="container-article">
-          <h3 class="title-section box-gray">Business</h3>
-          <div class="container-ol">
-            <ol class="float-right box-gray">
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">About us</li>
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">Costumers</li>
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">Means</li>
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">Blog</li>
-            </ol> 
-          </div>   
-          <p class="p-info">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-            scrambled it to make a type specimen book.
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-            scrambled it to make a type specimen book.
-          </p>
-        </article>
-      </section>
-      <section class="container-section">
-        <article class="container-article">
-          <h3 class="title-section box-gray">Support</h3>
-          <div class="container-ol">
-            <ol class="float-right box-gray">
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">Aid</li>
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">Tutorials</li>
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">API</li>
-              <li><img src="../Semana-02/assets/icon/arrow.svg" alt="button-Back">Contact</li>
-            </ol> 
-          </div>
-          <p class="p-info">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-            scrambled it to make a type specimen book.
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-            scrambled it to make a type specimen book.
+        <h2 class="title-section">Products & Services</h2>
+        <div class="margin-p">
+          <p class="p-products">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
           </p> 
-        </article> 
+          <p class="p-products">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p> 
+          <p class="p-products">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+        </div> 
+        <div class="container-flex">
+          <article class="container-article">
+            <h2 class="title-section">Products</h2>
+            <p class="p-info">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+            <div>
+              <ol>
+                <li>Functionalities</li>
+                <li>Downloads</li>
+                <li>Integrations</li>
+                <li>Adittional feactures</li>
+              </ol> 
+            </div> 
+          </article>    
+          <article class="container-article">
+            <h2 class="title-section">Business</h2>
+            <p class="p-info">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+            <div >
+              <ol>
+                <li>About us</li>
+                <li>Costumers</li>
+                <li>Means</li>
+                <li>Blog</li>
+              </ol> 
+            </div>   
+          </article>
+          <article class="container-article">
+            <h2 class="title-section">Support</h2>
+            <p class="p-info">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p> 
+            <div>
+              <ol>
+                <li>Aid</li>
+                <li>Tutorials</li>
+                <li>API</li>
+                <li>Contact</li>
+              </ol> 
+            </div>
+          </article> 
+        </div>
       </section>
     </main>
     <footer>
