@@ -11,7 +11,7 @@ main{
   margin-top: 120px;
   margin-left: 300px;
 }
-#img-main{
+.img-main{
   width: 507px;
   height:500px;
   margin-right: 160px;
@@ -64,6 +64,12 @@ h1{
 }
 .container-section{
   height: 770px;
+}
+.container-flex-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
 }
 .container-flex{
   display: flex;
@@ -188,7 +194,6 @@ h5{
 }
 .our-article{
   width: 1000px;
-  height: 800px;
 }
 .p-info{
   width: 300px;
@@ -198,12 +203,6 @@ h5{
   margin-left: 70px;
   margin-bottom: 20px;
 }
-.box-gray{
-  width: 240px;
-  padding: 30px;
-  background-color: #D9D9D9;
-}  
-
 ol li{
   font-size: 16px;
   font-weight: 400;
@@ -213,10 +212,122 @@ ol li{
 .margin-p{
   margin-bottom: 40px;
 }
+.container-article-prod{
+  margin-bottom: 50px;
+}
 .p-products{
   font-size: 16px;
   color: #373867;
-  margin-left: 70px;
+  margin-left: 85px;
   margin-bottom: 10px;
 }
- 
+@media screen and (max-width:834px) {
+  
+  .container-flex-reverse{
+    display: inline-block;
+  }
+  .container-flex{
+    display: inline-block;
+  }
+  main{
+    margin-left: 100px;
+  }
+  .img-main{
+    width:650px;
+    height:450px;
+    margin-top: 100px;
+  }
+  h1{
+    margin-left:0px;
+    margin-top: 66px;
+    margin-bottom: 50px;
+  }
+  .text-main{
+    margin-top: 0px;
+    margin-left: 0px;
+    width:650px;
+  }
+  .paragraph-main{
+    margin-left: 0px;
+  }
+  .container-paragraph-main{
+    margin-left: 0px;
+    width:650px;
+    background-color: white;
+  }
+  .btn-LearnMore{
+    margin-left: 0px;
+    margin-bottom: 150px;
+  }
+  .container-article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .margin-section{
+    padding: 90px;
+  }
+  .title-section{
+    margin-left: -40px;
+  }
+  .container-section{
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .form-flex{
+    justify-content: center;
+  }
+  .form-main{
+    margin-left: 0px;
+  }
+  .container-our{
+    margin-top: 250px;
+  }
+  .our-title{
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+  h5{
+    margin-left: 0px;
+  }
+  .p-history{
+    width: 500px;
+    margin-left: 0px;
+  }
+  .p-our{
+    width: 526px;
+    height: 200px;
+  }
+  .li-our{
+    margin-bottom: 30px;
+  }
+  .p-products{
+    margin-left: 0px;
+    width: 420px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .container-article-prod{
+    width: 550px;
+    height: auto;
+    margin-bottom: 250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .margin-prod{
+    margin-top: 300px;
+    margin-bottom: 150px;
+  }
+  .p-info{
+    font-size: 18px;
+    margin-left: 0px;
+  }
+  .title-prod{
+    margin-left: 0px;
+  }
+  ol li{
+    margin: 10px 0px 20px 20px;
+  }
+
+}

@@ -50,3 +50,9 @@ aside{
 aside ul{
   padding:10px 
 }
+
+@media screen and (max-width:834px) {
+  aside{
+    display: none;
+  }
+}
