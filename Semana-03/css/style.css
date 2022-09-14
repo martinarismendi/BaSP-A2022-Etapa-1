@@ -221,7 +221,7 @@ ol li{
   margin-left: 85px;
   margin-bottom: 10px;
 }
-@media screen and (min-width:834px){
+@media screen and (max-width:834px){
   html{
     width: 834px;
   }
@@ -333,7 +333,7 @@ ol li{
     margin: 10px 0px 20px 20px;
   }  
 }
-@media screen and (min-width:390px) {
+@media screen and (min-width:390px) and (max-width:830px) {
   .img-main{
     margin-top: 40px;
     width:332px;
@@ -373,8 +373,7 @@ ol li{
   .container-article{
     margin-left:-120px;
   }
-  .p-section{
-    
+  .p-section{    
     width: 310px;
   }
   .margin-section{
@@ -389,5 +388,30 @@ ol li{
     display:flex;
     flex-direction:column;
     margin-left:40px;
+  }
+  .our-title{
+    margin-bottom:5px;
+  }
+  .p-history{
+    width:322px;
+  }
+  .p-our{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 333px;
+  }
+  .our-article{
+   height:700px;
+
+  }
+  .container-article-prod{
+    justify-content: flex-start;
+  }
+  .title-prod{
+    margin-bottom: 20px;
+  }
+  .p-products{
+    width: 350px;
   }
 }

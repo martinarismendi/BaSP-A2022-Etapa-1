@@ -40,9 +40,18 @@ header{
 padding: 0px 15px;
 }
 
-@media screen and (max-width:834px) {
+@media screen and (min-width:834px) and (max-width:1510px) {
   .title-header{
     display: none;
+  }  
+}
+
+@media screen and (min-width:390px) and (max-width:830px) {
+  .ul-header{
+    display: none;
   }
-  
+  .title-header{
+    margin-left:200px;
+    display: inline-block;
+  }
 }
