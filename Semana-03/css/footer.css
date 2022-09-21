@@ -4,6 +4,7 @@ footer{
   background-color: #D9D9D9;
   bottom: 0;
   left: 0;
+  position: fixed;
 }
 .element-footer{
   text-align: center;
@@ -19,17 +20,7 @@ footer{
   color: #373867;
   font-weight: 500;
 }
-@media screen and (min-width:834px) and (max-width:1510){
-  footer{
-    position: fixed;
-  }
-  
-}
-@media screen and (min-width:390px) and (max-width:830px) {
-  footer{
-    display: flex;
-    align-items: center;
-  }
+@media screen and (min-width:480px) and (max-width:768px) {
   .text-footer{
     text-align: center;
     margin-left: 5px;
