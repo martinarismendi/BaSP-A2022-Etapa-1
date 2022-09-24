@@ -1,0 +1,59 @@
+#Getintouch{
+  margin-bottom: 100px;
+}
+aside{
+  background-color: #D9D9D9;
+  height: 100%;
+  width: 291px;
+  border-right: #ebeaea solid 8px;
+  position: fixed;
+  top: 105px;
+}
+.search{
+  width: 260px;
+  height: 37px;
+  border-radius: 4px;
+  margin-left:10px ;
+  margin-top: 25px;
+}
+.title-aside{
+  color: #373867;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+.border-aside{
+  border-bottom: #373867 solid ;
+  width: 212px;
+  margin: 5px 0px 20px 20px;
+}
+.img-aside{
+  width:20px;
+  height: 20px;
+  color: #373867;
+  margin-right: 10px;
+}
+.text-aside{
+  font-size: 14px;
+  font-weight: 500;
+  color:#373867;
+}
+.margin-top{
+  margin-top: 300px;
+}
+.items-aside{
+  padding: 10px;
+  margin-left: 25px;
+}
+aside ul{
+  padding:10px 
+}
+
+@media screen and (max-width:1020px){
+  aside{
+    display: none;
+  }
+}
+
