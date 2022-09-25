@@ -14,6 +14,7 @@
     <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/aside.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
           integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -84,33 +85,41 @@
         </div> 
       </div>    
     </aside>
-    <main>
-      <section class="container-flex-reverse">       
-        <form class="sing-in-form">
-          <div class="form-sing">
-            <a>Sing In</a>
-            <a>Sing Up</a>
-          </div>
-          <label>Email or User</label>
-          <input placeholder="user@gigatech.com">
-          <label>Password</label>
-          <input placeholder="***********">
-          <label>Remember me</label>
-          <a>Forgot password or Email?</a>
-          <button value="Sing In"></button>
-          <p>You not have account?</p>
-          <button value="Register"></button>
-        </form>
+    <main class="container-flex-form-sing">
+      <section class="section-login">
         <div class="container-title"> 
-          <h1>Trackgenix</h1>
-          <h2 class="text-main">Make it easy to record hours worked on each project and work team at GigaTech Software Solutions SA</h2>
+          <h1 class="main-title-login">Trackgenix</h1>
+          <h2 class="text-main-login">GigaTech Software Solutions SA</h2>
           <div class="container-paragraph-login-">
-            <p class="paragraph-main">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-              industry's standard dummy text ever since the 1500s,
+            <p class="paragraph-login">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book.
             </p>
           </div>
-        </div>                        
+        </div>
+      </section>
+      <section class="conteiner-form">
+        <div class="form-sing">
+          <a class="overline-sing-in">Sing In</a>
+          <a>Sing Up</a>
+        </div>       
+        <form class="sing-in-form">          
+          <div class="flex-input">
+            <label>Email or User</label>
+            <input class="input-form" type="email" placeholder="user@gigatech.com">
+            <label>Password</label>
+            <input class="input-form" type="password">
+          </div>  
+            <div class="check-box">
+              <label>Remember me</label>
+              <input type="radio">              
+            </div>  
+            <a>Forgot password or Email?</a>
+            <button class="btn-sing-in">Sing In</button>
+            <label>You not have account?</label>
+            <button class="btn-register">Register</button>           
+          </form>           
       </section>
     </main>
     <footer>
