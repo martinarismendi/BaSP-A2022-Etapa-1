@@ -8,7 +8,6 @@ html{
   display: flex;
   justify-content: center;
   align-items:center;
-  color: #fff;  
   margin-top: 195px;
 }
 .main-title-login{  
@@ -35,7 +34,7 @@ html{
 }
 .conteiner-form{
   width: 500px;
-  height: 620px;
+  height: 660px;
   background-color: #fff;
   border: solid #373867 1px;
   padding: 10px;
@@ -48,21 +47,15 @@ html{
   margin-top: 50px;
 }
 .input-form{
-  padding: 5px 12px;
+  padding: 10px 12px;
   border-radius: 4px;
-  margin-bottom: 25px;
-}
-.input-form-error{
-  display:none;
-}
-.input-form-error-active{
-  color:red;
-  display:block;
+  margin-bottom: 10px;
+  height: auto;
+  width: 200px;
 }
 .flex-input{
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
 }
 label{
   color: #373867;
@@ -99,6 +92,67 @@ a{
   background-color: #373867;
   border-color: #373867;
   border-radius: 4px;
-  margin:25px 0px; 
+  margin:35px 0px; 
+}
+.sing-up-form{
+  display: flex;
+  flex-direction: column;
+  margin:30px 20px 0px 20px;
+}
+.flex-campo{
+  display: flex;
+}
+.flex-input{
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.input-address{
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 97%;
+  height: auto;
+}
+.container-center{
+  text-align: center;
+  margin-top: 10px;
+}
+.form-input-error{
+  font-size: 10px;
+  margin-bottom: 0px;
+  display:none;
+  color: red;
+}
+.form-input-error-active{
+  display: block;
+}
+.form-message-successful{
+  font-size: 20px;
+  color: #fff;
+  height: 45px;
+  line-height:45px;
+  border-radius: 5px;
+  background-color: green;
+}
+.form-message-wrong{
+  font-size: 20px;
+  color: #fff;
+  height: 45px;
+  line-height:45px;
+  border-radius: 5px;
+  background-color: rgb(213, 13, 13);
 }
 
+.flex-input-wrong .form-label{
+  color: red;
+}
+.flex-input-wrong .input-form{
+  padding: 10px 12px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  height: auto;
+  width: 200px;
+  border-color: red;
+}

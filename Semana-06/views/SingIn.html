@@ -104,19 +104,20 @@
           <a class="overline-sing-in">Sing In</a>
           <a>Sing Up</a>
         </div>       
-        <form class="sing-in-form">          
+        <form class="sing-in-form" id="sing-in-form">          
           <div class="flex-input">
             <label>Email or User</label>
-            <input class="input-form" type="email" placeholder="user@gigatech.com">
+            <input id="login_UserEmail" class="input-form" type="email" placeholder="user@gigatech.com">
+            <p>The email must not contain:!@#$%^&*</p>
             <label>Password</label>
-            <input class="input-form" type="password">
+            <input id="login_Password" class="input-form" type="password">
           </div>  
             <div class="check-box">
               <label>Remember me</label>
               <input type="radio">              
             </div>  
             <a>Forgot password or Email?</a>
-            <button class="btn-sing-in">Sing In</button>
+            <button class="btn-sing-in" type="text" onclick="dataValidate(document.getElementById())">Sing In</button>
             <label>You not have account?</label>
             <button class="btn-register">Register</button>           
           </form>           
