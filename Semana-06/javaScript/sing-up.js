@@ -14,34 +14,33 @@ var inputPassword2 = document.querySelector("#Register-Password2");
 var nameOk,lastnameOk,dniOK,phoneOk,localityOk,addressOk,postCodeOk,emailOk,passwordOk,password2Ok;
 
 document.addEventListener('DOMContentLoaded', function(e){ 
-  e.preventDefault();
   inputName.addEventListener('blur',function(evt){
     var name = inputName.value;  
     if (containsNumbers(name) || name.length < 3){   
-      nameOk = true;   
+      nameOk = false;   
       document.querySelector('#Register-name-p').classList.add('form-input-error-active');    
     } else {  
-      nameOk = false;
+      nameOk = true;
       document.querySelector('#Register-name-p').classList.remove('form-input-error-active');
     }    
   })
   inputLastName.addEventListener('blur',function(evt){
     var Lastname = inputLastName.value;
     if (containsNumbers(Lastname) || Lastname.length < 3){  
-      lastnameOk  = true;    
+      lastnameOk  = false;    
       document.querySelector('#Register-Lastname-p').classList.add('form-input-error-active');    
     } else { 
-      lastnameOk  = false; 
+      lastnameOk  = true; 
       document.querySelector('#Register-Lastname-p').classList.remove('form-input-error-active');
     }
   })
   inputDni.addEventListener('blur',function(evt){
     var dni = inputDni.value;
     if (containsCharacter(dni) || dni.length < 7){  
-      dniOK = true;    
+      dniOK = false;    
       document.querySelector('#Register-DNI-p').classList.add('form-input-error-active');    
     } else {  
-      dniOK = false;
+      dniOK = true;
       document.querySelector('#Register-DNI-p').classList.remove('form-input-error-active');
     }
 
@@ -49,10 +48,10 @@ document.addEventListener('DOMContentLoaded', function(e){
   inputPhone.addEventListener('blur',function(evt){
     var phone = inputPhone.value;
     if (containsCharacter(phone) || phone.length != 10){     
-      phoneOk = true;
+      phoneOk = false;
       document.querySelector('#Register-Phone-p').classList.add('form-input-error-active');    
     } else {  
-      phoneOk = false;
+      phoneOk = true;
       document.querySelector('#Register-Phone-p').classList.remove('form-input-error-active');
     }
   })
@@ -198,12 +197,27 @@ document.addEventListener('DOMContentLoaded', function(e){
   function removeErrorTextFocus(inputId){
    document.querySelector('#'+ inputId +'-p').classList.remove('form-input-error-active');  
   }
-
-
   submit.addEventListener('click',function(evt){
-    if((nameOk) && (lastnameOk) && (dniOK) && (phoneOk) &&(localityOk) && (addressOk) && (postCodeOk) &&(emailOk)
-    (passwordOk) && (password2Ok)){
+    if((nameOk) && (lastnameOk) && (dniOK) && (phoneOk) &&(localityOk) && (addressOk) && (postCodeOk) && (emailOk) && (passwordOk) && (password2Ok)){
+      var name = inputName.value;
+      var Lastname = inputLastName.value;
+      var dni = inputDni.value;  
+      var phone = inputPhone.value;
+      var locality = inputLocality.value;
+      var address = inputAddress.value;
+      var postalcode = inputPostalCode.value;
+      var Email = inputEmail.value;
+      var password = inputPassword.value;
       document.querySelector('.form-message-successful').classList.add('form-message-successful-active');
+      alert("Name:" + name );
+      alert("LastName:" + Lastname );
+      alert("DNI:" + dni );
+      alert("Phone:" + phone );
+      alert( "Locality:" + locality );
+      alert("Address:" + address );
+      alert("PostalCode:" + postalcode );
+      alert("Email:" + Email  );
+      alert("Password:" + password);
     }else{
       document.querySelector('.form-message-wrong').classList.add('form-message-wrong-active');
     }     

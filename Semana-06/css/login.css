@@ -52,11 +52,14 @@ html{
   border-radius: 4px;
   margin-bottom: 25px;
 }
-.input-form-error{
+.input-form-error-p{  
+  font-size: 10px;
+  margin-bottom: 0px;
+  display:none;
+  color: red;
   display:none;
 }
-.input-form-error-active{
-  color:red;
+.input-form-error-p-active{
   display:block;
 }
 .flex-input{
