@@ -138,16 +138,17 @@
             <div class="flex-input">     
               <label class="form-label">Locality</label>
               <input id="Register-Locality" class="input-form" type="text" placeholder="Buenos Aires">
-              <p id="Register-Phone-p" class="form-input-error">Only accept alphabetic and at least 3 characters</p>
+              <p id="Register-Locality-p" class="form-input-error">Only accept alphabetic and at least 3 characters</p>
             </div>
           </div>
-          <label>Address</label>
+          <label class="form-label">Address</label>
           <input id="Register-Address" class="input-address" type="text" placeholder="St. example ,1234">
+          <p id="Register-Address-p" class="form-input-error">At least 5 characters with letters, numbers and a space in between.</p>
           <div class="flex-campo">
             <div class="flex-input">
               <label class="form-label">Postal code</label>
               <input id="Register-PostalCode" class="input-form" type="text" placeholder="11111">
-              <p id="Register-PostalCode-p" class="form-input-error">Only accept numeric characters</p>
+              <p id="Register-PostalCode-p" class="form-input-error">Only accept numeric characters and </p>
             </div>
             <div class="flex-input">
               <label class="form-label">Email</label>
@@ -171,8 +172,8 @@
         <div class="container-center">          
           <p>You not have account?</p>          
           <button id="btn-Register"  class="btn-register">Register</button>    
-          <p class="form-message-successful">Registration was successful</p>
-          <p class="form-message-wrong">Please correct the field</p>
+          <p id="form-message-successful" class="form-message-successful">Registration was successful</p>
+          <p id="form-message-wrong" class="form-message-wrong">Error, some field are incorrect </p>
         </div>                        
       </section>
     </main>

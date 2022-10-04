@@ -135,6 +135,11 @@ a{
   line-height:45px;
   border-radius: 5px;
   background-color: green;
+  display:none;
+}
+
+.form-message-successful-active{
+  display:block;
 }
 .form-message-wrong{
   font-size: 20px;
@@ -143,6 +148,10 @@ a{
   line-height:45px;
   border-radius: 5px;
   background-color: rgb(213, 13, 13);
+  display:none;
+}
+.form-message-wrong-active{
+  display:block;
 }
 
 .flex-input-wrong .form-label{

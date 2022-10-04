@@ -11,87 +11,108 @@ var inputPostalCode = document.querySelector("#Register-PostalCode");
 var inputEmail = document.querySelector("#Register-Email");
 var inputPassword = document.querySelector("#Register-Password");
 var inputPassword2 = document.querySelector("#Register-Password2");
+var nameOk,lastnameOk,dniOK,phoneOk,localityOk,addressOk,postCodeOk,emailOk,passwordOk,password2Ok;
 
 document.addEventListener('DOMContentLoaded', function(e){ 
   e.preventDefault();
   inputName.addEventListener('blur',function(evt){
     var name = inputName.value;  
-    if (containsNumbers(name) || name.length < 3){      
+    if (containsNumbers(name) || name.length < 3){   
+      nameOk = true;   
       document.querySelector('#Register-name-p').classList.add('form-input-error-active');    
     } else {  
+      nameOk = false;
       document.querySelector('#Register-name-p').classList.remove('form-input-error-active');
     }    
   })
   inputLastName.addEventListener('blur',function(evt){
     var Lastname = inputLastName.value;
-    if (containsNumbers(Lastname) || Lastname.length < 3){      
+    if (containsNumbers(Lastname) || Lastname.length < 3){  
+      lastnameOk  = true;    
       document.querySelector('#Register-Lastname-p').classList.add('form-input-error-active');    
-    } else {  
+    } else { 
+      lastnameOk  = false; 
       document.querySelector('#Register-Lastname-p').classList.remove('form-input-error-active');
     }
   })
   inputDni.addEventListener('blur',function(evt){
     var dni = inputDni.value;
-    if (containsCharacter(dni) || dni.length < 7){      
+    if (containsCharacter(dni) || dni.length < 7){  
+      dniOK = true;    
       document.querySelector('#Register-DNI-p').classList.add('form-input-error-active');    
     } else {  
+      dniOK = false;
       document.querySelector('#Register-DNI-p').classList.remove('form-input-error-active');
     }
 
   })
   inputPhone.addEventListener('blur',function(evt){
     var phone = inputPhone.value;
-    if (containsCharacter(phone) || phone.length != 10){      
+    if (containsCharacter(phone) || phone.length != 10){     
+      phoneOk = true;
       document.querySelector('#Register-Phone-p').classList.add('form-input-error-active');    
     } else {  
+      phoneOk = false;
       document.querySelector('#Register-Phone-p').classList.remove('form-input-error-active');
     }
   })
   inputLocality.addEventListener('blur',function(evt){
     var locality = inputLocality.value;
-    if (containsCharacter(locality) && containsNumbers(locality) && locality.length > 3){     
+    if ((containsCharacter(locality) && containsNumbers(locality) && locality.length > 3) || (containsCharacter(locality) && locality.length > 3)){     
+      localityOk = true;
       document.querySelector('#Register-Locality-p').classList.remove('form-input-error-active');
-    } else {        
+    } else { 
+      localityOk = false;
       document.querySelector('#Register-Locality-p').classList.add('form-input-error-active');
     }
   })
   inputAddress.addEventListener('blur',function(evt){
     var address = inputAddress.value;
-    if (containsCharacter(address) && containsNumbers(address) && address.length > 5 && containsSpace(address)){     
+    if (containsCharacter(address) && containsNumbers(address) && address.length > 5 && containsSpace(address)){  
+      addressOk = true;
       document.querySelector('#Register-Address-p').classList.remove('form-input-error-active');
-    } else {        
+    } else { 
+      addressOk = false;
       document.querySelector('#Register-Address-p').classList.add('form-input-error-active');
     }
   })
   inputPostalCode.addEventListener('blur',function(evt){
     var postalcode = inputPostalCode.value;
-    if ((containsNumbers(postalcode) && postalcode.length == 5) || (containsNumbers(postalcode) && postalcode.length == 4)){     
+    if ((containsNumbers(postalcode) && postalcode.length == 5) || (containsNumbers(postalcode) && postalcode.length == 4)){ 
+      postCodeOk = true;
       document.querySelector('#Register-PostalCode-p').classList.remove('form-input-error-active');
-    } else {        
+    } else { 
+      postCodeOk = false;
       document.querySelector('#Register-PostalCode-p').classList.add('form-input-error-active');
     }
   })
   inputEmail.addEventListener('blur',function(evt){
     var Email = inputEmail.value;    
     if (emailExpression.test(Email)){
+      emailOk = true;
       document.querySelector('#Register-Email-p').classList.remove('form-input-error-active');
     } else {
+      emailOk = false;
       document.querySelector('#Register-Email-p').classList.add('form-input-error-active');
     }
   })  
   inputPassword.addEventListener('blur',function(evt){
     var password = inputPassword.value;
-    if (containsNumbers(password) && password.length >= 8 && containsCharacter(password)){     
+    if ((containsNumbers(password) || containsCharacter(password)) && password.length >= 8 ){     
+      passwordOk = true;
       document.querySelector('#Register-Password-p').classList.remove('form-input-error-active');
-    } else {        
+    } else { 
+      passwordOk = false;
       document.querySelector('#Register-Password-p').classList.add('form-input-error-active');
     }  
   })
-  inputPassword2.addEventListener('blur',function(evt){
-    var password2 = inputPassword2.value;
-    if (containsNumbers(password2) && password2.length >= 8 && containsCharacter(password2)){     
+  inputPassword2.addEventListener('blur',function(evt){ 
+    password2 = inputPassword2.value;   
+    if ((containsNumbers(password2) || containsCharacter(password2)) && password2.length >= 8 ){   
+      password2Ok = true;
       document.querySelector('#Register-Password2-p').classList.remove('form-input-error-active');
-    } else {        
+    } else { 
+      password2Ok = false;
       document.querySelector('#Register-Password2-p').classList.add('form-input-error-active');
     }
   })
@@ -111,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function(e){
   }  
   function containsCharacter(inputField){
     contChar = false;
-    var alfabetic = "abcdefghijklmnopqrstuvwxyz";
+    var alfabetic = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     for(var i = 0; i < inputField.length; i++){
       var c = inputField.charAt(i);
       for(var y = 0;y<alfabetic.length;y++){
@@ -135,44 +156,58 @@ document.addEventListener('DOMContentLoaded', function(e){
     return contSpace;
   }  
   inputName.addEventListener('focus',function(evt){ 
-    var inputId = evt.target.id;    
-    removeErrorTextFocus(inputId);
+    var inputName = evt.target.id;    
+    removeErrorTextFocus(inputName);
   })
   inputLastName.addEventListener('focus',function(evt){ 
-    var inputId = evt.target.id;    
-    removeErrorTextFocus(inputId);  
+    var inputLastName = evt.target.id;    
+    removeErrorTextFocus(inputLastName);  
   })
   inputDni.addEventListener('focus',function(evt){ 
-    var inputId = evt.target.id;    
-    removeErrorTextFocus(inputId);
+    var inputDni = evt.target.id;    
+    removeErrorTextFocus(inputDni);
+  })
+  inputPhone.addEventListener('focus',function(evt){ 
+    var inputPhone = evt.target.id;    
+    removeErrorTextFocus(inputPhone);
   })
   inputLocality.addEventListener('focus',function(evt){ 
-    var inputId = evt.target.id;    
-    removeErrorTextFocus(inputId);   
+    var inputLocality = evt.target.id;    
+    removeErrorTextFocus(inputLocality);   
   })
-  inputAddress.addEventListener('focus',function(evt){ 
-    var inputId = evt.target.id;    
-    removeErrorTextFocus(inputId);   
+  inputAddress.addEventListener('focus',function(et){ 
+    var inputAddress = et.target.id;    
+    removeErrorTextFocus(inputAddress);   
   })
   inputPostalCode.addEventListener('focus',function(evt){ 
-    var inputId = evt.target.id;    
-    removeErrorTextFocus(inputId);  
+    var inputPostalCode = evt.target.id;    
+    removeErrorTextFocus(inputPostalCode);  
   })
   inputEmail.addEventListener('focus',function(evt){ 
-    var inputId = evt.target.id;    
-    removeErrorTextFocus(inputId);
+    var inputEmail = evt.target.id;    
+    removeErrorTextFocus(inputEmail);
   })
   inputPassword.addEventListener('focus',function(evt){ 
-    var inputId = evt.target.id;    
-    removeErrorTextFocus(inputId);   
+    var inputPassword = evt.target.id;    
+    removeErrorTextFocus(inputPassword);   
   })
   inputPassword2.addEventListener('focus',function(evt){ 
-    var inputId = evt.target.id;    
-    removeErrorTextFocus(inputId); 
+    var inputPassword2 = evt.target.id;    
+    removeErrorTextFocus(inputPassword2); 
   })  
   function removeErrorTextFocus(inputId){
    document.querySelector('#'+ inputId +'-p').classList.remove('form-input-error-active');  
-  } 
+  }
+
+
+  submit.addEventListener('click',function(evt){
+    if((nameOk) && (lastnameOk) && (dniOK) && (phoneOk) &&(localityOk) && (addressOk) && (postCodeOk) &&(emailOk)
+    (passwordOk) && (password2Ok)){
+      document.querySelector('.form-message-successful').classList.add('form-message-successful-active');
+    }else{
+      document.querySelector('.form-message-wrong').classList.add('form-message-wrong-active');
+    }     
+  })
 
 })
   
