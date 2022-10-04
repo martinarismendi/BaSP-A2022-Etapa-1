@@ -14,126 +14,129 @@ var inputPassword2 = document.querySelector("#Register-Password2");
 
 document.addEventListener('DOMContentLoaded', function(e){ 
   e.preventDefault();
-
   inputName.addEventListener('blur',function(evt){
-    var name = inputName.value;
-    console.log(name);
+    var name = inputName.value;    
+    if (containsNumbers(name) || name.length < 3){      
+      document.querySelector('#Register-name').classList.add('flex-input-wrong');    
+    } else {  
+      document.querySelector('#Register-name').classList.remove('flex-input-wrong');
+    }    
   })
   inputLastName.addEventListener('blur',function(evt){
-    console.log("hola");
+    var Lastname = inputLastName.value;
+    if (containsNumbers(Lastname) || Lastname.length < 3){      
+      document.querySelector('#Register-Lastname').classList.add('flex-input-wrong');    
+    } else {  
+      document.querySelector('#Register-Lastname').classList.remove('flex-input-wrong');
+    }
   })
-
   inputDni.addEventListener('blur',function(evt){
-    console.log("hola");
-  })
+    var dni = inputDni.value;
+    if (containsCharacter(dni) || dni.length < 7){      
+      document.querySelector('#Register-Lastname').classList.add('flex-input-wrong');    
+    } else {  
+      document.querySelector('#Register-Lastname').classList.remove('flex-input-wrong');
+    }
 
+  })
   inputPhone.addEventListener('blur',function(evt){
-    console.log("hola");
+    var phone = inputPhone.value;
+    if (containsCharacter(phone) || phone.length != 10){      
+      document.querySelector('#Register-Lastname').classList.add('flex-input-wrong');    
+    } else {  
+      document.querySelector('#Register-Lastname').classList.remove('flex-input-wrong');
+    }
   })
   inputLocality.addEventListener('blur',function(evt){
-    console.log("hola");
+    var locality = inputLocality.value;
+    if (containsCharacter(locality) && containsNumbers(locality) && locality.length > 3){     
+      document.querySelector('#Register-Lastname').classList.remove('flex-input-wrong');
+    } else {        
+      document.querySelector('#Register-Lastname').classList.add('flex-input-wrong');
+    }
   })
   inputAddress.addEventListener('blur',function(evt){
-    console.log("hola");
+    var address = inputAddress.value;
+    if (containsCharacter(address) && containsNumbers(address) && address.length > 5 && containsSpace(address)){     
+      document.querySelector('#Register-Lastname').classList.remove('flex-input-wrong');
+    } else {        
+      document.querySelector('#Register-Lastname').classList.add('flex-input-wrong');
+    }
   })
   inputPostalCode.addEventListener('blur',function(evt){
-    console.log("hola");
+    var postalcode = inputPostalCode.value;
+    if ((containsNumbers(postalcode) && postalcode.length == 5) || (containsNumbers(postalcode) && postalcode.length == 4)){     
+      document.querySelector('#Register-Lastname').classList.remove('flex-input-wrong');
+    } else {        
+      document.querySelector('#Register-Lastname').classList.add('flex-input-wrong');
+    }
   })
   inputEmail.addEventListener('blur',function(evt){
-    console.log("hola");
+    var Email = inputEmail.value;    
+    if (emailExpression.test(Email)) {
+      document.querySelector('#Register-Lastname').classList.remove('flex-input-wrong');
+    } else {
+      document.querySelector('#Register-Lastname').classList.add('flex-input-wrong');
+    }
   })  
   inputPassword.addEventListener('blur',function(evt){
-    console.log("hola");
+    var password = inputPassword.value;
+    if (containsNumbers(password) && password.length >= 8 && containsCharacter(password)){     
+      document.querySelector('#Register-Lastname').classList.remove('flex-input-wrong');
+    } else {        
+      document.querySelector('#Register-Lastname').classList.add('flex-input-wrong');
+    }  
   })
   inputPassword2.addEventListener('blur',function(evt){
-    console.log("hola");
-  })
-
-
-
-
-
-
-  /*var name = document.getElementById("Register-name").value;
-  inputName = document.getElementById("Register-name");
-  inputName.addEventListener("blur", function(name){   
-    if (containsNumbers(name) && name.length > 3){      
-      document.querySelector('.flex-input').classList.add('flex-input-wrong');    
-    } else {  
-      document.querySelector('.flex-input').classList.remove('flex-input-wrong');
+    var password2 = inputPassword2.value;
+    if (containsNumbers(password2) && password2.length >= 8 && containsCharacter(password2)){     
+      document.querySelector('#Register-Lastname').classList.remove('flex-input-wrong');
+    } else {        
+      document.querySelector('#Register-Lastname').classList.add('flex-input-wrong');
     }
-  });
-
-function containsNumbers(name){
+  })
+  function containsNumbers(inputField){
     contNumber = false;
-    for(var i = 0; i < name.length; i++){
-      var c = name.charAt(i);
-      if(c == '0' || c == '1' || c == '2' || c == '3' || c == '4' || c == '5' ||c == '6' ||c == '7' ||c == '8' ||c == '9'){
-        contNumber = true;
+    var nums ="1234567890";
+    for(var i = 0; i < inputField.length; i++){
+      var c = inputField.charAt(i);
+      for(var x = 0; x < nums.length; x++){
+        var n = nums.charAt(n);
+        if(c == n ){
+          contNumber = true;
+        }
+      }      
+    }
+    return contNumber;
+  }  
+  function containsCharacter(inputField){
+    contChar = false;
+    var alfabetic = "abcdefghijklmnopqrstuvwxyz";
+    for(var i = 0; i < inputField.length; i++){
+      var c = inputField.charAt(i);
+      for(var y = 0;y<alfabetic.length;y++){
+        var x = alfabetic.charAt(y);
+        if(c == x ){
+          contChar = true;
+        }
+      }      
+    }
+    return contChar;
+  }
+  function containsSpace(addr){
+    contSpace = false;
+    var space = " ";
+    for(var i = 0; i < addr.length; i++){
+      var a = addr.charAt(i);
+      if(a == space){
+        contSpace = true;
       }
     }
-    console.log(contNumber);
-    return contNumber;
-  }*/
-  /*  var Lastname = document.getElementById("Register-Lastname").value;
-  inputLastName = document.getElementById("Register-Lastname");
-  inputLastName.addEventListener("blur", function(Lastname){    
-    if (containsNumbers(Lastname) && Lastname.length > 3){      
-      document.querySelector('.flex-input').classList.add('flex-input-wrong');    
-    } else {  
-      document.querySelector('.flex-input').classList.remove('flex-input-wrong');
-    }
-  });
-  var dni = document.getElementById("Register-DNI").value;
-  inputdni = document.getElementById("Register-DNI");
-  inputdni.addEventListener("blur", function(dni){  
-    document.getElementById("flex-input").classList.add('flex-input-wrong');
-    if (!(containsNumbers(dni)) && (dni.length > 7)){      
-      document.querySelector('.flex-input').classList.add('flex-input-wrong');    
-    } else {  
-      document.querySelector('.flex-input').classList.remove('flex-input-wrong');
-    }
-  });
-
-  var phone = document.getElementById("Register-Phone").value;
-  inputphone = document.getElementById("Register-Phone");
-  inputphone.addEventListener("blur", function(phone){  
-    document.getElementById("flex-input").classList.add('flex-input-wrong');
-    if (!(containsNumbers(phone)) && (phone.length = 10)){      
-      document.querySelector('.flex-input').classList.add('flex-input-wrong');    
-    } else {  
-      document.querySelector('.flex-input').classList.remove('flex-input-wrong');
-    }
-  });
-  var locality = document.getElementById("Register-Locality").value;
-  inputlocality = document.getElementById("Register-Locality");
-  inputlocality.addEventListener("blur", function(locality){  
-    document.getElementById("flex-input").classList.add('flex-input-wrong');
-    if (locality.length > 3){      
-      document.querySelector('.flex-input').classList.add('flex-input-wrong');    
-    } else {  
-      document.querySelector('.flex-input').classList.remove('flex-input-wrong');
-    }
-  });
-  var PostalCode = document.getElementById("Register-PostalCode").value;
-  inputPostalCode = document.getElementById("Register-PostalCode");
-  inputPostalCode.addEventListener("blur", function(PostalCode){  
-    document.getElementById("flex-input").classList.add('flex-input-wrong');
-    if (locality.length > 3){      
-      document.querySelector('.flex-input').classList.add('flex-input-wrong');    
-    } else {  
-      document.querySelector('.flex-input').classList.remove('flex-input-wrong');
-    }
-  });
-  var password = document.getElementById("Register-Password").value;
-  inputpassword = document.getElementById("Register-Password");
-  inputpassword.addEventListener("blur", function(password){  
-    document.getElementById("flex-input").classList.add('flex-input-wrong');
-    if (locality.length >= 8 ){      
-      document.querySelector('.flex-input').classList.add('flex-input-wrong');    
-    } else {  
-      document.querySelector('.flex-input').classList.remove('flex-input-wrong');
-    }
-  });*/
+    return contSpace;
+  }  
+  form.addEventListener('focus',function(evt){ 
+    var inputId = evt.target.id
+    document.querySelector('#'+inputId).classList.remove('flex-input-wrong');   
+  })
 })
   
