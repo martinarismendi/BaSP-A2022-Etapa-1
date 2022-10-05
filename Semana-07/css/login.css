@@ -104,6 +104,18 @@ a{
   border-radius: 4px;
   margin:25px 0px; 
 }
+.form-message-wrong{
+  font-size: 20px;
+  color: #fff;
+  height: 45px;
+  line-height:45px;
+  border-radius: 5px;
+  background-color: rgb(213, 13, 13);
+  display:none;
+}
+.form-message-wrong-active{
+  display:block;
+}
 @media screen and (max-width:768px) {
   .container-flex-form-sing{
     display: flex;

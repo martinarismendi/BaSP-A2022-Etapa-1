@@ -108,7 +108,7 @@
         <form class="sing-in-form" id="sing-in-form">          
           <div class="flex-input">
             <label>Email or User</label>
-            <input id="Register-Emaillog" class="input-form" type="text" placeholder="name@radium.com">
+            <input id="Email-log" class="input-form" type="text" placeholder="name@radium.com">
             <p id="input-email-error-p" class="input-form-error-p">The email must not contain:!#$%^&*</p>
             <label>Password</label>
             <input id="login_Password" class="input-form" type="password">
@@ -117,7 +117,8 @@
             <div class="check-box">
               <label for="RememberMe-check-box">Remember me</label>
               <input id="RememberMe-check-box" type="checkbox">              
-            </div>  
+            </div> 
+            <p id="form-message-wrong" class="form-message-wrong">Error, some field are incorrect </p> 
             <a>Forgot password or Email?</a>
             <button class="btn-sing-in" type="text" onclick="dataValidate(document.getElementById())">Sing In</button>
             <label>You not have account?</label>

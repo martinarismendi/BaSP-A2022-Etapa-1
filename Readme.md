@@ -22,8 +22,11 @@
 ```
 4.Finish
 
+Links of problematic 07
+https://martinarismendi.github.io/BaSP-A2022-Etapa-1/Semana-07
 
-Week Problem 05
+
+Week Problem 07
 
 
 ### Martin Arismendi.

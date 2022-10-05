@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function(e){
   //if exist storage information
   var nameStorage = localStorage.getItem('name');  
   if(nameStorage != ""){
-    console.log("storagename");
     document.querySelector('#Register-name').value = nameStorage;
   }
   var LastNameStorage = localStorage.getItem('lastName');
