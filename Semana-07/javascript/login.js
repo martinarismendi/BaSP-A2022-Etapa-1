@@ -1,9 +1,12 @@
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-var form = document.querySelector(".sing-in-form");
-var emailLogin = document.querySelector("#Email-log");
-var inputPasswordLogin = document.querySelector("#login_Password");
+var form;
+var emailLogin;
+var inputPasswordLogin;
 var emailOk,passwordOk;
 document.addEventListener('DOMContentLoaded', function(event){ 
+  form = document.querySelector(".sing-in-form");
+  emailLogin = document.querySelector("#Email-log");
+  inputPasswordLogin = document.querySelector("#login_Password");
   event.preventDefault;
   //if exist storage information
   var emailStorage = localStorage.getItem('email');  
@@ -63,11 +66,11 @@ document.addEventListener('DOMContentLoaded', function(event){
     }
     return contChar;
   }
-  inputEmail.addEventListener('focus',function(evt){ 
+  emailLogin.addEventListener('focus',function(evt){ 
     var inputId = evt.target.id;    
     removeErrorTextFocus(inputId);
   })
-  inputPassword.addEventListener('focus',function(evt){ 
+  inputPasswordLogin.addEventListener('focus',function(evt){ 
     var inputId = evt.target.id;    
     removeErrorTextFocus(inputId);   
   })
