@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function(e){
   }) 
   inputdob.addEventListener('focus',function(evt){
     var inputdob = evt.target.id;    
-    removeErrorTextFocus(inputdob);
+    removeErrorTextFocus(inputdob);  
   })
   
   function removeErrorTextFocus(inputId){
