@@ -102,7 +102,7 @@
       </section>
       <section class="conteiner-form">       
         <div class="form-sing">
-          <a>Sing In</a>
+          <a href="./login.html">Sing In</a>
           <a class="overline-sing-in">Sing Up</a>
         </div>
         <form class="sing-up-form" id="sing-up-form">
@@ -110,70 +110,71 @@
             <div class="flex-input">
               <label class="form-label">First name</label>
               <input id="Register-name" class="input-form" type="text" placeholder="Carlos">
-              <p class="form-input-error">name only accept alphabetic characters</p>
+              <p id="Register-name-p" class="form-input-error">name only accept alphabetic characters</p>
             </div>
             <div class="flex-input">
               <label class="form-label">Last name</label>
               <input id="Register-Lastname" class="input-form" type="text" placeholder="Martinez">
-              <p class="form-input-error">Last name only accept alphabetic characters</p>
+              <p id="Register-Lastname-p" class="form-input-error">Last name only accept alphabetic characters</p>
             </div>
           </div>
           <div class="flex-campo">
             <div class="flex-input">
               <label class="form-label">DNI</label>
               <input id="Register-DNI" class="input-form" type="text" placeholder="12345678">
-              <p class="form-input-error">Only accept numeric characters</p>
-              <p class="form-input-error">The length of number is not correct</p>
+              <p id="Register-DNI-p" class="form-input-error">Only accept numeric characters and more than 7 nums</p>
             </div>
             <div class="flex-input">
               <label class="form-label">Date of birth</label>
-              <input class="input-form" type="date" placeholder="mm/dd/aaaa">
+              <input id="Register-dob" class="input-form" type="date" placeholder="mm/dd/aaaa">
+              <p id="Register-dob-p" class="form-input-error">date cannot be null</p>
             </div>
           </div>
           <div class="flex-campo">
             <div class="flex-input">
               <label class="form-label">Phone</label>
               <input id="Register-Phone" class="input-form" type="text" placeholder="+54 0 00 0000 0000">
-              <p class="form-input-error">Only accept numeric characters</p>
-              <p class="form-input-error">The length of number is not correct</p>
+              <p id="Register-Phone-p" class="form-input-error">Only accept numeric characters and more than 10 digit</p>
             </div>       
             <div class="flex-input">     
               <label class="form-label">Locality</label>
               <input id="Register-Locality" class="input-form" type="text" placeholder="Buenos Aires">
+              <p id="Register-Locality-p" class="form-input-error">Only accept alphabetic and at least 3 characters</p>
             </div>
           </div>
-          <label>Address</label>
+          <label class="form-label">Address</label>
           <input id="Register-Address" class="input-address" type="text" placeholder="St. example ,1234">
+          <p id="Register-Address-p" class="form-input-error">At least 5 characters with letters, numbers and a space in between.</p>
           <div class="flex-campo">
             <div class="flex-input">
               <label class="form-label">Postal code</label>
               <input id="Register-PostalCode" class="input-form" type="text" placeholder="11111">
-              <p class="form-input-error">Postal code is not correct</p>
+              <p id="Register-PostalCode-p" class="form-input-error">Only accept numeric characters and </p>
             </div>
             <div class="flex-input">
               <label class="form-label">Email</label>
               <input id="Register-Email" class="input-form" type="text" placeholder="name@radium.com">
-              <p class="form-input-error">The email is not correct</p>
+              <p id="Register-Email-p" class="form-input-error">The email is not correct</p>
             </div>
           </div>
           <div class="flex-campo">
             <div class="flex-input">
               <label class="form-label">Password</label>
               <input id="Register-Password" class="input-form" type="password" placeholder="********">
-              <p class="form-input-error">Accepted length is between 4 and 12 characters</p>
+              <p id="Register-Password-p" class="form-input-error">Accepted length is between 4 and 12 characters</p>
             </div>
             <div class="flex-input">
               <label class="form-label">Repeat Password</label>
               <input id="Register-Password2" class="input-form" type="password" placeholder="********">
-              <p class="form-input-error">Passwords do not match</p>
+              <p id="Register-Password2-p" class="form-input-error">Passwords do not match</p>
             </div>
           </div>  
         </form>
         <div class="container-center">          
           <p>You not have account?</p>          
           <button id="btn-Register"  class="btn-register">Register</button>    
-          <p class="form-message-successful">Registration was successful</p>
-          <p class="form-message-wrong">Please correct the field</p>
+          <p id="form-message-successful" class="form-message-successful">Registration was successful</p>
+          <p id="form-message-wrong" class="form-message-wrong">Error, some field are incorrect </p>
         </div>                        
       </section>
     </main>

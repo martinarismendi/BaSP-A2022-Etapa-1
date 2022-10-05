@@ -52,11 +52,14 @@ html{
   border-radius: 4px;
   margin-bottom: 25px;
 }
-.input-form-error{
+.input-form-error-p{  
+  font-size: 10px;
+  margin-bottom: 0px;
+  display:none;
+  color: red;
   display:none;
 }
-.input-form-error-active{
-  color:red;
+.input-form-error-p-active{
   display:block;
 }
 .flex-input{
@@ -101,4 +104,17 @@ a{
   border-radius: 4px;
   margin:25px 0px; 
 }
-
+@media screen and (max-width:768px) {
+  .container-flex-form-sing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  .main-title-login{
+    font-size: 30px;
+  }
+  .text-main-login{
+    font-size: 20px;
+  }
+}

@@ -34,7 +34,8 @@ html{
 }
 .conteiner-form{
   width: 500px;
-  height: 660px;
+  height: auto;
+  min-height: 660px;
   background-color: #fff;
   border: solid #373867 1px;
   padding: 10px;
@@ -135,6 +136,11 @@ a{
   line-height:45px;
   border-radius: 5px;
   background-color: green;
+  display:none;
+}
+
+.form-message-successful-active{
+  display:block;
 }
 .form-message-wrong{
   font-size: 20px;
@@ -143,6 +149,10 @@ a{
   line-height:45px;
   border-radius: 5px;
   background-color: rgb(213, 13, 13);
+  display:none;
+}
+.form-message-wrong-active{
+  display:block;
 }
 
 .flex-input-wrong .form-label{
@@ -155,4 +165,18 @@ a{
   height: auto;
   width: 200px;
   border-color: red;
+}
+@media screen and (max-width:768px) {
+  .container-flex-form-sing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  .main-title-login{
+    font-size: 30px;
+  }
+  .text-main-login{
+    font-size: 20px;
+  }
 }
